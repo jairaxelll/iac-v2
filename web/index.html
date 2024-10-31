@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Calcular IAC</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <h1>Calculadora de Índice de Adiposidad Corporal (IAC)</h1>
+    <form action="calcularIAC" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="edad">Edad:</label>
+        <input type="number" id="edad" name="edad" required>
+
+        <label for="sexo">Sexo:</label>
+        <select id="sexo" name="sexo" required>
+            <option value="M">Masculino</option>
+            <option value="F">Femenino</option>
+        </select>
+
+        <label for="estatura">Estatura (en metros):</label>
+        <input type="number" step="0.01" id="estatura" name="estatura" required>
+
+        <label for="cadera">Cadera (en centímetros):</label>
+        <input type="number" step="0.1" id="cadera" name="cadera" required>
+
+        <button type="submit">Calcular IAC</button>
+    </form>
+</body>
+</html>
+
